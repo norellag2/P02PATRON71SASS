@@ -1,0 +1,20 @@
+@import './abstracts/mixins';
+@import './abstracts/variables';
+
+@import './base/reset';
+@import './base/typography';
+
+
+@import './components/buttons';
+
+@import './layout/containers';
+
+body{
+    font-family: $regular-font-family;
+    color: $regular-font-color;
+}
+
+h1{
+    font-size: 1.5rem;
+    color: $brand-color;
+}

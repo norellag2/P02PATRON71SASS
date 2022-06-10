@@ -1,0 +1,32 @@
+.container{
+    max-width: $pc-size;
+    margin: 0 auto;
+
+
+    .row{
+        @include flex(row, center, center);
+
+        @media (max-width: $tablet-size) {
+            & {
+              @include flex (column, center, center);
+            }
+        }
+
+        .col{
+            &-100{
+                width: 100%;
+                padding: 1rem;
+            }
+            &-50{
+                width: 50%;
+                padding: 1rem;
+            }
+
+            @media (max-width: $tablet-size) {
+                &-50 {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

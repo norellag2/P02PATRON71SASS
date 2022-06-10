@@ -1,0 +1,23 @@
+button {
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0.4rem;
+    transition: all 300ms linear;
+
+    &.primary{
+
+        @include flex (row, center, center);
+
+        background-color: $brand-color;
+        border-color: $brand-color;
+        color: white;
+
+        img{
+            margin-right: 0.5rem;
+        }
+            
+        
+    }
+}
